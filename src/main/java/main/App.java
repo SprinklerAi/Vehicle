@@ -26,27 +26,27 @@ public class App
                         System.out.println("Minkä kulkuneuvon haluat rakentaa? 1) auto, 2) lentokone, 3) laiva");
                         if(sc.hasNextInt()){
                             int type_choice = sc.nextInt();
-
+                            sc.nextLine();
                             switch (type_choice) {
                                 case 1:
                                     System.out.println("Anna kulkuneuvon valmistaja:");
-                                    String car_manufacturer = sc.next();
+                                    String car_manufacturer = sc.nextLine();
 
                                     System.out.println("Anna kulkuneuvon malli:");
-                                    String car_model = sc.next();
+                                    String car_model = sc.nextLine();
 
                                     System.out.println("Anna kulkuneuvon huippunopeus:");
                                     int car_max_speed = sc.nextInt();
-
+                                
                                     vehicles.add(new Car(car_manufacturer, car_model, car_max_speed));
                                     break;
                                     
                                 case 2:
                                     System.out.println("Anna kulkuneuvon valmistaja:");
-                                    String plane_manufacturer = sc.next();
+                                    String plane_manufacturer = sc.nextLine();
 
                                     System.out.println("Anna kulkuneuvon malli:");
-                                    String plane_model = sc.next();
+                                    String plane_model = sc.nextLine();
 
                                     System.out.println("Anna kulkuneuvon huippunopeus:");
                                     int plane_max_speed = sc.nextInt();
@@ -55,10 +55,10 @@ public class App
 
                                 case 3:
                                     System.out.println("Anna kulkuneuvon valmistaja:");
-                                    String ship_manufacturer = sc.next();
+                                    String ship_manufacturer = sc.nextLine();
 
                                     System.out.println("Anna kulkuneuvon malli:");
-                                    String ship_model = sc.next();
+                                    String ship_model = sc.nextLine();
 
                                     System.out.println("Anna kulkuneuvon huippunopeus:");
                                     int ship_max_speed = sc.nextInt();
