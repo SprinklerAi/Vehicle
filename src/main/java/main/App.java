@@ -72,7 +72,6 @@ public class App
                         }
                         break;
                     case 2:
-                        System.out.println("List of Vehicles:");
                         for (Vehicle vehicle : vehicles) {
                             vehicle.print_specs();
                         }
