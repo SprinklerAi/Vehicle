@@ -34,7 +34,7 @@ public class Vehicle {
 
     public void print_specs() {
         System.out.println(type + ": " + manufacturer + " " + model);
-        System.out.println("Moottori: " + engine.get_name() + " " + engine.get_power() + "kwH");
+        System.out.println("Moottori: " + engine.get_name() + " " + engine.get_power() + "kw");
         System.out.println("Huippunopeus: " + max_speed + "km/h");
         System.out.println("");
     }
